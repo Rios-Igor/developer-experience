@@ -1,0 +1,1234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --cyan: #5CE1E6;
+    --blue: #38B6FF;
+    --pink: #D88B92;
+    --off-white: #F2F2F2;
+    --pure-black: #000000;
+    --pure-black-transparent: #000000b2;
+    --dark-color: #333333;
+    --btn-green: #27AE60;
+    --font-defaut: 'Roboto Mono', monospace;
+    --font-dark-color: #383838;
+    --purple: #5662B7;
+    --light-color: #f2f2f2;
+    --light-color-2: #8f8f8f;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* background-color: tomato; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: url("../imagens/wallpaperPrincipal.png");
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    padding: 0 50px;
+    color: var(--pure-black);
+    background-color: var(--cyan);
+    border: none;
+    border-radius: 5px;
+    /* or 114% */
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: var(--font-defaut);
+    font-weight: 500;
+    cursor: pointer
+}
+
+.right {
+    float: right;
+}
+
+.body {
+    color: #383838;
+}
+
+/* Navbar */
+
+nav {
+
+    height: 81px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avatar {
+    float: right;
+}
+
+.logo,
+.btnLogin {
+    margin-top: 15px;
+    height: 82px;
+}
+
+.btnLogin {
+    width: 135px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+    color: white;
+    float: right;
+}
+
+
+/* Index */
+
+.index-content {
+    display: flex;
+    min-height: 700px;
+}
+
+/* .info-index {
+    border: 1px solid red;
+} */
+
+.info-index h1 {
+    font-size: calc(4em + 1vw);
+    margin-top: 150px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: var(--font-defaut);
+    color: var(--font-dark-color);
+}
+
+.info-index .display {
+    font-family: Roboto Mono;
+    margin-top: 150px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 84px;
+    color: #F2F2F2;
+}
+
+.subtitle {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 50px 0;
+    color: #5CE1E6;
+}
+
+.info-index h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: var(--font-defaut);
+    color: var(--purple);
+}
+
+.not-found h3 {
+    font-size: 60px;
+}
+
+.box-text-index {
+    width: 50%;
+}
+
+.index-img {
+    width: 50%;
+    margin: auto;
+}
+
+/* Music page */
+
+.filter {
+    /* background-color: red; */
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+.music-boxes {
+    /* background-color: red; */
+    /* text-align: center; */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-music {
+    background-image: url(../imagens/cover-pink.png);
+    background-size: cover;
+    height: 371px;
+    width: 31.3%;
+    margin: 0 1%;
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.music-box {
+    width: 290px;
+    margin: 5px;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+
+
+.textMessage {
+    /* display: flex;
+    flex-direction: column;
+    width: 510px;
+    height: 260px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    color: white; */
+
+    position: absolute;
+    width: 510px;
+    height: 260px;
+    left: 149px;
+    top: 202px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+
+    color: #FFFFFF;
+}
+
+.textMessage b {
+    font-weight: bolder;
+    color: black;
+}
+
+.imgIndex {
+    position: absolute;
+    width: 466px;
+    height: 464px;
+    left: 864px;
+    top: 140px;
+    border-radius: 5rem;
+    background: url("../imagens/imgIndex.png");
+    background-repeat: no-repeat;
+
+}
+
+.personName {
+    position: absolute;
+    left: 62.45%;
+    right: 0%;
+    top: 80.39%;
+    bottom: 0%;
+    background-color: #E7EEFE;
+    border-radius: 4rem;
+}
+
+.personName span {
+    position: absolute;
+    left: 10.86%;
+    right: 11.43%;
+    top: 24.18%;
+    bottom: 19.78%;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.personName p {
+    color: #9747FF;
+}
+
+
+/* Sobre nós */
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 0 150px 0 150px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#content {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.boxText {
+    height: 360px;
+    width: 610px;
+    margin: 1rem;
+    display: grid;
+    gap: 15px;
+}
+
+.texto {
+
+
+    display: grid;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.texto b {
+    color: #000000;
+}
+
+.name {
+    color: #9747FF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.name span {
+    color: #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.imgRadius {
+    background-color: pink;
+    margin: 1rem;
+    width: 466px;
+    height: 464px;
+    background: url("../imagens/imgIndex.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    justify-content: end;
+    display: flex;
+}
+
+.imgProfileName {
+    height: 91px;
+    width: 175px;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #E7EEFE;
+    margin-top: auto;
+}
+
+.buttons {
+    width: 550px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btnTalento {
+    width: 175px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.btnEmpresa {
+    width: 175px;
+    height: 48px;
+}
+
+.subEmpresas {
+    width: 708px;
+    height: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.empresas {
+    width: 708px;
+    height: 64px;
+    background: url("../imagens/empresas.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: flex-start;
+}
+
+.empresas p {
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+}
+
+.leftLine {
+    width: 2px;
+    height: 116px;
+    background: white;
+}
+
+.valores {
+    height: 600px;
+    /* width: 100vw; */
+    background: url("../imagens/imgValores.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.txtBoxValores {
+    height: 391px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoValores {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 72px;
+    text-align: center;
+
+}
+
+/* VAGAS */
+.vagas {
+    background-color: rebeccapurple;
+}
+
+
+.container-planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #D8E2FB;
+    padding-top: 5%;
+}
+
+
+#container-planos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background: #D8E2FB;
+}
+
+
+.conteiner-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.conteiner-card .card-planos1 {
+    position: relative;
+    width: 400px;
+    height: 455px;
+    border-radius: 17px;
+}
+
+.conteiner-card .card-planos1 .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.conteiner-card .card-planos2 {
+    position: relative;
+    width: 535px;
+    height: 570px;
+    border-radius: 17px;
+}
+
+.conteiner-card .card-planos2 .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+.conteiner-card .card-planos3 {
+    position: relative;
+    width: 400px;
+    height: 455px;
+    border-radius: 17px;
+}
+
+.conteiner-card .card-planos3 .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+
+.conteiner-card .card-planos1 .box-front {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-image: url("../imagens/imgFront.png");
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+}
+
+.conteiner-card .card-planos2 .box-mobile {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-image: url("../imagens/cards.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.conteiner-card .card-planos3 .box-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-image: url("../imagens/cardBackEnd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 3rem;
+    margin-top: auto;
+    border-radius: 0px 0px 39px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 107%;
+}
+
+
+.conteiner-card .card-planos .box-coment {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 39px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #9747FF;
+}
+
+
+.defaultButtonTalento {
+    width: 170px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+    color: #000;
+    float: right;
+    border: 2px solid #7246e5;
+    ;
+}
+
+.defaultButtonEmpresa {
+    width: 170px;
+    height: 40px;
+    background-color: #9747FF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+    color: #fff;
+    float: right;
+    border: 2px solid #9747FF;
+}
+
+
+.valor2 {
+    width: 135px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+    color: red;
+    float: right;
+}
+
+
+.rodape {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-image: url(../imagens/rodape.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactIcons {
+    width: 678px;
+    height: 50px;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconHome {
+    background-image: url(../imagens/Home.png);
+    width: 109px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+.iconSobreNos {
+    background-image: url(../imagens/About.png);
+    width: 109px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+.iconWork {
+    background-image: url(../imagens/Work.png);
+    width: 130px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+.iconPhone {
+    background-image: url(../imagens/Contact.png);
+    width:131px;
+    height: 44px;
+    background-repeat: no-repeat;
+}
+
+
+/* CONFIGURANDO POP UP */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: opacity .3s;
+}
+
+/* CONFIGURANDO POP UP */
+.popupStepThree {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: opacity .3s;
+}
+
+
+.popupInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 691px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+
+.popupInner .closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.popupInner .continuar {
+    position: absolute;
+    top: 94%;
+    right: 8%;
+}
+
+
+.header {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header .stepOne {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.header .stepTwo {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #D9D9D9;
+    color: #A78BEE;
+}
+
+.header .stepThree {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #D9D9D9;
+}
+
+.alignContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.formData {
+    display: flex;
+}
+
+.header .formData .stepOne {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.header .formData .stepTwo {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.header .formData .stepThree {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.formData .stepOne .alignContent .countingSteps {
+    background-color: #D9D9D9;
+    color: #898989;
+}
+
+.formData .stepThree .alignContent .countingSteps {
+    background-color: #9747FF;
+    color: #fff;
+}
+
+/*  */
+
+/* CONFIGURANDO PASSO 2 DO CADASTRO */
+.formDataStepTwo {
+    display: flex;
+}
+
+.contentAlignForm h1 {
+    height: 2rem;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.underLine b {
+    width: 50px;
+}
+
+.skills {
+    text-align: left;
+    width: 50%;
+}
+
+
+.skills b {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.header .formDataStepTwo .stepOne {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.header .formDataStepTwo .stepTwo {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #9747FF;
+}
+
+.header .formDataStepTwo .stepThree {
+    width: 300px;
+    height: 100%;
+    border-bottom: 5px solid #898989;
+}
+
+.formDataStepTwo .stepOne .alignContent .countingSteps {
+    background-color: #D9D9D9;
+    color: #898989;
+}
+
+
+.formDataStepTwo .stepTwo .alignContent .countingSteps {
+    background-color: #9747FF;
+    color: #fff;
+}
+
+.formDataStepTwo .stepThree .alignContent .countingSteps {
+    background-color: #D9D9D9;
+    color: #898989;
+}
+
+h2 {
+    border: 2px solid red;
+}
+
+.underLine {
+    margin: 8px;
+    height: 2px;
+    width: 50%;
+    border-top: 1px solid #ded2ff;
+}
+
+h1 {
+    margin: 1rem;
+    width: 50%;
+}
+
+.profissao {
+    margin: 8px;
+    width: 434px;
+    height: 50px;
+    border-radius: 9px;
+    color: #000;
+    padding: 10px;
+    border: 2px solid#ded2ff;
+}
+
+/*  */
+
+.cardUsuario {
+    width: 435px;
+    height: 146px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    border: 2px solid#ded2ff;
+    border-radius: 1rem;
+}
+
+.alignCard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dataUser {
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+}
+
+.imgUser {
+    width: 128px;
+    height: 128px;
+    border-radius: 6rem;
+    margin: 10px;
+    background-color: #f4f0ff;
+    border: 1px dashed #ded2ff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.userIcon{
+    background-image: url('../imagens/user.png');
+    width: 40px;
+    height: 40px;
+}
+
+.formStyle {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.flex-gapInputs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 90%;
+}
+
+/* CSS DAS  INPUTS DE CADASTRO step 3 */
+.boxContentOne {
+    width: 70%;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxContentOne b {
+    margin: 8px;
+}
+
+.boxContentOne input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid #ded2ff;
+    background-color: rgba(113,101,146,0.4);
+}
+
+.boxContentTwo input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid #ded2ff;
+    background-color: rgba(113,101,146,0.4);
+}
+
+.boxContentTwo {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.boxContentTwo b {
+    margin: 8px;
+}
+
+
+.countingSteps {
+    height: 53px;
+    width: 55px;
+    background-color: #9747FF;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+    color: #fff;
+}
+
+.textSkills {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.stepTwo .alignContent .countingSteps {
+    background-color: #D9D9D9;
+    color: #898989;
+}
+
+.textPerfil {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.stepThree .alignContent .countingSteps {
+    background-color: #D9D9D9;
+    color: #898989;
+}
+
+
+.textExp {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+
+.contentAlignForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.salve {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    margin-top: 5px;
+}
+
+.titleSkills {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.titleSkills p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+}
+
+.titleSkills p {
+    font-size: 24px;
+    line-height: 46px;
+}
+
+
+.titleSkills b {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #3c3c3c;
+}
+
+.flex-gap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+    box-sizing: border-box;
+    border: 1px solid #898989;
+    text-align: center;
+
+}
+
+.imgProg {
+    background-image: url("../imagens/iconProg.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.imgTI {
+    /* background-image: url("../imagens/prog48px.png"); */
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+
+}
+
+.imgSup {
+    background-image: url("../imagens/iconSuporte.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+
+}
+
+.imgJuridico {
+    background-image: url("../imagens/juridicoOfi\ 1.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.imgDesign {
+    background-image: url("../imagens/iconDesign.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.alignCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.card:hover {
+    background-color: #9747ff57;
+    border: 2px solid #7246e5;
+    color: #7246e5;
+}
+
+.skills span {
+    margin: 0 0 2rem;
+    letter-spacing: -.14px;
+}
+
+
+.areaSelect {
+    width: 80%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.imgFromAreaSelect {
+    width: 30px;
+    height: 30px;
+    background-image: url('../imagens/icon30pxProg.png');
+}
+
+u:hover {
+    color: #7246e5;
+}
+
+.fe {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #3c3c3c;
+    margin: 1rem;
+}
+
+.areaSelect u {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #3c3c3c;
+}
+
+u:hover {
+    color: #7246e5;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
